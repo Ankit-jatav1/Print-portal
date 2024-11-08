@@ -1,3 +1,4 @@
+
 <form action="/upload" method="POST" enctype="multipart/form-data">
     <input type="text" name="customerName" placeholder="Enter your name" required />
     <label for="category">Choose a category:</label>
@@ -7,4 +8,10 @@
     </select>
     <input type="file" name="files" multiple required />
     <button type="submit">Submit</button>
+    <a href="{{ url_for('admin_login') }}">Go to Admin Login</a>
+    <a href="{{ url_for('admin_dashboard') }}">admin Dashboard</a>
+    <!--http://127.0.0.1:5000/upload for customer upload page.
+    http://127.0.0.1:5000/admin/login for the admin login page.-->
+
+
 </form>
