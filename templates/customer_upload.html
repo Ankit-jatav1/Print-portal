@@ -1,0 +1,10 @@
+<form action="/upload" method="POST" enctype="multipart/form-data">
+    <input type="text" name="customerName" placeholder="Enter your name" required />
+    <label for="category">Choose a category:</label>
+    <select name="category">
+        <option value="documents">Documents</option>
+        <option value="photos">Photos</option>
+    </select>
+    <input type="file" name="files" multiple required />
+    <button type="submit">Submit</button>
+</form>

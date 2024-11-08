@@ -1,0 +1,13 @@
+<h2>Admin Dashboard</h2>
+<table>
+    <tr>
+        <th>File</th>
+        <th>Action</th>
+    </tr>
+    {% for file in files %}
+    <tr>
+        <td>{{ file }}</td>
+        <td><a href="{{ url_for('admin_download', filename=file) }}">Download</a></td>
+    </tr>
+    {% endfor %}
+</table>
